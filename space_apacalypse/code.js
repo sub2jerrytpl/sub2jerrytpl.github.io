@@ -384,6 +384,31 @@ s7.visible = 0;
 s8a.visible = 0;
 s8b.visible = 0;
 function draw() {
+  if (one.scale < .2) {
+    one.visible = false;
+  } else {
+    one.visible = true;
+  }
+  if (two.scale < .2) {
+    two.visible = false;
+  } else {
+    two.visible = true;
+  }
+  if (three.scale < .2) {
+    three.visible = false;
+  } else {
+    three.visible = true;
+  }
+  if (five.scale < .2) {
+    five.visible = false;
+  } else {
+    five.visible = true;
+  }
+  if (ten.scale < .2) {
+    ten.visible = false;
+  } else {
+    ten.visible = true;
+  }
   if (win == 1) {
     stopSound("assets/rubbbbby.mp3");
     stopSound("assets/mewwwtwoooo.mp3");
@@ -926,30 +951,30 @@ function game() {
     }
     gamereset = 1;
   }
-  if (one.scale > .1) {
-    one.scale = one.scale - .1;
+  if (one.scale > .01) {
+    one.scale = one.scale - .01;
   } else {
-    one.scale = .1;
+    one.scale = .01;
   }
-  if (three.scale > .1) {
-    three.scale = three.scale - .1;
+  if (three.scale > .01) {
+    three.scale = three.scale - .01;
   } else {
-    three.scale = .1;
+    three.scale = .01;
   }
-  if (five.scale > .1) {
-    five.scale = five.scale - .1;
+  if (five.scale > .01) {
+    five.scale = five.scale - .01;
   } else {
-    five.scale = .1;
+    five.scale = .01;
   }
-  if (two.scale > .1) {
-    two.scale = two.scale - .1;
+  if (two.scale > .01) {
+    two.scale = two.scale - .01;
   } else {
-    two.scale = .1;
+    two.scale = .01;
   }
-  if (ten.scale > .1) {
-    ten.scale = ten.scale - .1;
+  if (ten.scale > .01) {
+    ten.scale = ten.scale - .01;
   } else {
-    ten.scale = 0.1;
+    ten.scale = 0.01;
   }
   if (bosslife < 1) {
     win = 1;
