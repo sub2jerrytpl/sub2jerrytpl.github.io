@@ -384,7 +384,6 @@ s7.visible = 0;
 s8a.visible = 0;
 s8b.visible = 0;
 function draw() {
-  console.log(dabble == 0);
   if (win == 1) {
     stopSound("assets/rubbbbby.mp3");
     stopSound("assets/mewwwtwoooo.mp3");
